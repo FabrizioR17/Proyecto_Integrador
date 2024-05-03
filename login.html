@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="stylesinicio.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="Logo de la clínica"></a>
+        </div>
+
+    </header>
+
+    <main>
+        <h1><a href="login.html" id="myLinkinicio">Iniciar Sesión</a> / <a href="registro.html" id="myLinkregistro">Registrarse</a></h1>
+        <form id="login-form">
+            <label for="tipo-doc">Tipo de Documento:</label>
+            <select id="tipo-doc">
+                <option value="dni" selected>DNI</option>
+                <option value="pasaporte">Pasaporte</option>
+                <option value="carnet">Carnet de Extranjería</option>
+            </select>
+            <label for="num-doc">Número de Documento:</label>
+            <input type="number" id="num-doc" required>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" required>
+            <div class="options">
+                <label for="recordar"><input type="checkbox" id="recordar"> Recordar</label>
+                <button onclick="login()">Ingresar</button>
+        </form>
+    </main>
+
+    <footer>
+        <!-- Contenido del footer -->
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+</html>

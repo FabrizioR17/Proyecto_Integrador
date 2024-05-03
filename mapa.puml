@@ -1,0 +1,27 @@
+@startuml Prueba
+
+class Odontologo {
+  + ID: int
+  + nombre: string
+  + apellido: string
+  + matricula: string
+}
+
+class Paciente {
+  + ID: int
+  + nombre: string
+  + apellido: string
+  + domicilio: string
+  + DNI: string
+  + fechaAlta: date
+}
+
+class Turno {
+  + ID: int
+  + fechaHora: datetime
+}
+
+Odontologo "1" --> "*" Paciente
+Paciente "1" --> "*" Turno
+
+@enduml
